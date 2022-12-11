@@ -1,11 +1,14 @@
 # ==========================IMPORTING============================
-import os, sys, time, base64, shutil, socket, requests
+import os, sys, time, base64, shutil, socket
 try:
     from rich.console import Console
+    import requests
 except:
     os.system("pip install rich")
+    os.system("pip install requests")
     try:
         from rich.console import Console
+        import requests
     except:
         input("""
 
